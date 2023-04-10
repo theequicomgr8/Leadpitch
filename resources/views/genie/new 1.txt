@@ -1,0 +1,13 @@
+$locales = [
+    'en',
+    'ru',
+];
+
+foreach ($locales as $locale) {
+
+    Route::group(['prefix' => $locale], function() {
+
+        Route::get('route1',function(){});
+        Route::post('route1',function(){});
+    });
+} return false;
